@@ -19,9 +19,4 @@ public class MountainBike extends Bicycle {
         seatHeight = newValue;
     }
 
-    // override method
-    @Override
-    public void setCadence(int newValue) {
-        super.setCadence(newValue + 10);
-    }
 }

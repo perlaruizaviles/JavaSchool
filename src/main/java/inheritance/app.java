@@ -9,19 +9,10 @@ public class app{
 
         System.out.println( bici.getClass().toString() );
 
-        bici.setCadence( 2 );
-
-        System.out.println( bici.getCadence() );
-
-
         // sub class
         MountainBike mountainBici = new MountainBike(1, 2, 3, 4);
 
         System.out.println( mountainBici.getClass().toString() );
-
-        mountainBici.setCadence( 2 );
-
-        System.out.println( mountainBici.getCadence() );
 
         if ( mountainBici instanceof Bicycle ){
 
