@@ -3,17 +3,22 @@ package AbstractClass;
 /**
  * Created by pruiz on 9/17/17.
  */
-abstract class Bike{
-    abstract void run();
+abstract class Bank{
+    abstract int getRateOfInterest();
+}
+class SBI extends Bank{
+    int getRateOfInterest(){return 7;}
+}
+class PNB extends Bank{
+    int getRateOfInterest(){return 8;}
 }
 
-class Honda4 extends Bike{
-
-    // implementation is mandatory!
-    void run(){System.out.println("running safely..");}
-
+class TestBank{
     public static void main(String args[]){
-        Bike obj = new Honda4();
-        obj.run();
+        Bank b;
+        b=new SBI();
+        System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");
+        b=new PNB();
+        System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");
     }
 }
