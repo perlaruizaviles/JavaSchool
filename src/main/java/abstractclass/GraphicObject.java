@@ -1,4 +1,4 @@
-package AbstractClass;
+package abstractclass;
 
 /**
  * Created by pruiz on 9/17/17.
